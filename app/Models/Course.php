@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Exam;
 use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model
@@ -16,4 +17,10 @@ class Course extends Model
         'cfu',
         'website'
     ];
+
+    public function exams(){
+
+        return $this->hasMany('App\Models\Exam');
+    }
+
 }
