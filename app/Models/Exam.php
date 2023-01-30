@@ -14,4 +14,6 @@ class Exam extends Model
         'address'
     ];
 
+    
+
 }

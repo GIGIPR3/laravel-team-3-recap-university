@@ -12,7 +12,7 @@ class Teacher extends Model
         'surname',
         'phone',
         'email',
-        'office_address',
+        'office_address', 
         'office_number'
     ];
 
