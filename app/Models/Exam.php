@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Course;
 use Illuminate\Database\Eloquent\Model;
 
 class Exam extends Model
@@ -11,7 +12,13 @@ class Exam extends Model
         'date',
         'hour',
         'location',
-        'address'
+        'address',
+        'course_id'
     ];
+
+    public function course(){
+
+        return $this->BelongsTo('App\Models\Course');
+    }
 
 }
