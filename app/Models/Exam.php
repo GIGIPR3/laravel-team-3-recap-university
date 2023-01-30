@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+
 use Illuminate\Database\Eloquent\Model;
 
 class Exam extends Model
@@ -11,9 +12,7 @@ class Exam extends Model
         'date',
         'hour',
         'location',
-        'address'
+        'address',
+        'course_id'
     ];
-
-    
-
 }
